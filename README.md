@@ -3,3 +3,4 @@
 Source: https://adventofcode.com/2023/
 
 - [Day 1](Day1/)
+- [Day 2](Day2/)
