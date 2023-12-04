@@ -30,7 +30,6 @@ for text in data:
             counterIds[nextId] = counterIds[cardId] if cardId != nextId else 1
 
 
-
     resultPart1 += counterPart1
 
 print(f"Part 1: {resultPart1}")
