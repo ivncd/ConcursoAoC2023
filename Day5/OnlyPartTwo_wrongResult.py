@@ -100,7 +100,6 @@ for locationId in range(len(humidityToLocation)):
                 resultPart2 = location
                 break
 
-        # There is probably a cleaner way to do it but I'm tired .-.
         else:
             continue
         break
