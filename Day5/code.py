@@ -52,7 +52,7 @@ seeds, parsedData = parseData(data)
 # Part 1
 resultPart1 = obtainLowestLocation(seeds, parsedData)
 
-# Part 2 - NOT TIME EFICIENT SOLUTION - 4 HOURS aprox
+# Part 2 - BRUTEFORCE SEED - NOT TIME EFICIENT SOLUTION - 4 HOURS aprox
 """
 resultPart2 = -1 
 for seedId in range(0, len(seeds), 2):
@@ -96,7 +96,7 @@ humidityToLocation, humiditySources = sortRange(parsedData['humidity-to-location
 seedsRanges = getSeedRanges(seeds)
 
 
-resultPart2 = 0 # 136.096.660
+resultPart2 = 0
 for locationId in range(len(humidityToLocation)):
     lowLocation, highLocation =  humidityToLocation[locationId][0], humidityToLocation[locationId][1]
     sourceLowLoc, sourceHighLoc = humiditySources[locationId][0], humiditySources[locationId][1]
