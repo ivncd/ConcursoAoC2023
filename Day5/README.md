@@ -3,13 +3,12 @@
 
 Source: [Advent of Code 2023 - Day 5](https://adventofcode.com/2023/day/5)
 
-In [code.py](code.py) there is the working answer using bruteforce, it took 4 hours.
+In [code.py](code.py) there is two answers for Part 2, the first one is bruteforcing the `seeds`, it takes 4 hours.
 
 ![Hola](../assets/timeDay5.png)
 
----
 
-There is also a second file  [OnlyPartTwo_wrongResult.py](OnlyPartTwo_wrongResult.py), this is my attempt to not making use bruteforce, at the end of the day I couldn't finish, it passed all the tests but when introducing the `input.txt` it gives me the wrong answer. 
+The second one is bruteforcing the `location` doing a reverse lookup from `location` to `seed`. Taking 50 mins.
 
-That script is the one that has taken most time of all days until now.
+
 
