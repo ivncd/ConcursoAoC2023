@@ -7,3 +7,4 @@ Source: https://adventofcode.com/2023/
 - [Day 3](Day3/) 🌟🌟
 - [Day 4](Day4/) 🌟🌟
 - [Day 5](Day5/) 🌟🌟
+- [Day 6](Day6/) 🌟🌟
