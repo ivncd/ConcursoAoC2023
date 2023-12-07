@@ -104,7 +104,6 @@ for locationId in range(len(humidityToLocation)):
     n = 0 if locationId == 0 else lowLocation
     for number in tqdm(range(n, highLocation), desc="Part 2"):
         currentDestination = number
-        allPossible = [currentDestination]
         for transformation in list(reversed(parsedData.keys()))[:]:
             localData = parsedData[transformation]
             for destination, source, length in localData:
@@ -114,9 +113,8 @@ for locationId in range(len(humidityToLocation)):
                     currentDestination = lowestSource + (currentDestination - lowestDestination)
                     break
             
-            allPossible.append(currentDestination)
         
-        seed = allPossible[-1]
+        seed = currentDestination
         location = number
         
         for low, high in seedsRanges:
