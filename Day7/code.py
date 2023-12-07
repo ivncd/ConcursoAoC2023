@@ -74,6 +74,9 @@ def getOrder(part2 = False):
         if len(orderByCardValue[cardValue]) > 0:
             handAdded = False
             for rankId in range(len(orderByCardValue[cardValue])):
+                if handAdded:
+                    break
+
                 rankedHand = orderByCardValue[cardValue][rankId]
                 for cardId in range(len(rankedHand)):
                     rankedCard, card = rankedHand[cardId], hand[cardId]
@@ -88,13 +91,8 @@ def getOrder(part2 = False):
                     else:
                         break
                 
-                else:
-                    continue
                 
-                if handAdded:
-                    break
-
-            if hand not in orderByCardValue[cardValue]:
+            if not handAdded:
                 orderByCardValue[cardValue].append(hand)
                 
         else:
@@ -126,4 +124,3 @@ resultPart2 = result(orderByCardValue)
 
 print(f"Part 1: {resultPart1}") # 250120186
 print(f"Part 2: {resultPart2}") # 250665248
-
