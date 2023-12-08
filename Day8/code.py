@@ -25,23 +25,31 @@ startingPositions = [key for key in map if key[-1] == 'A']
 zPositions = [{} for _ in range(len(startingPositions))]
 multipliers = [0 for _ in range(len(startingPositions))]
 for positionId, position in enumerate(startingPositions):
-    secondPosition = False
-    while not secondPosition:
+    foundPosition, counter2 = False, 1
+    while not foundPosition:
         for instruction in instructions:
             currentPosition = map[startingPositions[positionId]][1] if instruction == 'R' else map[startingPositions[positionId]][0] # R L
             if currentPosition[-1] == 'Z':
-                if currentPosition not in zPositions[positionId]:
-                    zPositions[positionId][currentPosition] = counter2 + 1
-                    
-                else:
-                    multipliers[positionId] =  (counter2 + 1) - zPositions[positionId][currentPosition]
-                    secondPosition = True
-                    break
+                multipliers[positionId] = counter2
+                foundPosition = True
+                break
+                
+                # -- Edit after reviewing the code -- #
+                #if currentPosition not in zPositions[positionId]: # Unncessary because there is only one unique XXZ for each XXA
+                    #zPositions[positionId][currentPosition] = counter2 # Unnecessary, explained below
             
+                    # Given that distance from XXA to XXZ is always equal to the distance from XXZ to XXZ (cyclic), then we can just 
+                    # do the LCM of the distance and get the lowest point they meet
+
+                #else:
+                    #multipliers[positionId] = (counter2) - zPositions[positionId][currentPosition]
+                    #Unnecessary because: counter2 - zPositions[positionId][currentPosition] == zPositions[positionId][currentPosition]
+                
+                # ---------------------------------- #
+
             startingPositions[positionId] = currentPosition
             counter2 += 1
 
 
-print('Part 1: ', counter)
-print('Part 2: ', lcm(*multipliers))
-
+print('Part 1: ', counter) # 20093
+print('Part 2: ', lcm(*multipliers)) # 22103062509257
