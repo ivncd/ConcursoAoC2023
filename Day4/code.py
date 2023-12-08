@@ -34,4 +34,4 @@ for text in data:
     resultPart1 += counterPart1
 
 print(f"Part 1: {resultPart1}") # 21558
-print(f"Part 2: {sum([counterIds[i] for i in counterIds])}") # 10425665
+print(f"Part 2: {sum(counterIds.values()") # 10425665
