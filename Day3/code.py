@@ -52,7 +52,7 @@ def checkNear(lineId, letterId, numberlen, data):
 with open('input.txt', 'r') as f:
     data = f.read()
 
-data = ['.' + d.strip() + '.' for d in data.splitlines()[:]] # Adding '.' at both sides 
+data = ['.' + d.strip() + '.' for d in data.splitlines()] # Adding '.' at both sides 
 gears = {}
 
 outputPart1 = []
