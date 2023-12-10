@@ -2,12 +2,13 @@
 
 Source: https://adventofcode.com/2023/
 
-- [Day 1](Day1/) 🌟🌟
-- [Day 2](Day2/) 🌟🌟
-- [Day 3](Day3/) 🌟🌟
-- [Day 4](Day4/) 🌟🌟
-- [Day 5](Day5/) 🌟🌟
-- [Day 6](Day6/) 🌟🌟
-- [Day 7](Day7/) 🌟🌟
-- [Day 8](Day8/) 🌟🌟
-- [Day 9](Day9/) 🌟🌟
+- [Day 1](Day1/) &nbsp; &nbsp; 🌟🌟
+- [Day 2](Day2/) &nbsp; &nbsp; 🌟🌟
+- [Day 3](Day3/) &nbsp; &nbsp; 🌟🌟
+- [Day 4](Day4/) &nbsp; &nbsp; 🌟🌟
+- [Day 5](Day5/) &nbsp; &nbsp; 🌟🌟
+- [Day 6](Day6/) &nbsp; &nbsp; 🌟🌟
+- [Day 7](Day7/) &nbsp; &nbsp; 🌟🌟
+- [Day 8](Day8/) &nbsp; &nbsp; 🌟🌟
+- [Day 9](Day9/) &nbsp; &nbsp; 🌟🌟
+- [Day 10](Day10/)      &nbsp; 🌟
