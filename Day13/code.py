@@ -46,29 +46,26 @@ def getPatternResult(pattern : list, notAllowedResult : int = 0) -> int:
     return result
 
 
-resultPart1, resultPattern = 0, {}
+resultPart1, resultPart2 = 0, 0
 for pId, pattern in enumerate(patterns):
     pattern = pattern.splitlines()
-    result = getPatternResult(pattern)
+    result1 = getPatternResult(pattern)
     
-    resultPart1 += result
-    resultPattern[pId] = result
+    resultPart1 += result1
 
-
-resultPart2 = 0
-for pId, pattern in enumerate(patterns):
-    lastResult = resultPart2
+    pattern = '\n'.join(pattern)
     for letterId in range(len(pattern)):
         newPattern = (pattern[:letterId] + ('.' if pattern[letterId] == '#' else ('#' if pattern[letterId] == '.' else pattern[letterId])) + pattern[letterId + 1:]).splitlines()
-        result = getPatternResult(newPattern, resultPattern[pId])
-        if result != 0: # Invalid pattern, no mirror
+        result2 = getPatternResult(newPattern, result1)
+        if result2 != 0: # Invalid pattern, no mirror
             break
 
     else: # In case there is no break in the loop then the smudge dont affect our solution so we just take the data
-        result = resultPattern[pId]
+        result2 = result1
+    
+    resultPart2 += result2
 
-    resultPart2 += result
 
 
-print('Part 1:', resultPart1)
-print('Part 2:', resultPart2)
+print('Part 1:', resultPart1) #27502
+print('Part 2:', resultPart2) #31947
