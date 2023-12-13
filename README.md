@@ -13,3 +13,5 @@ Source: https://adventofcode.com/2023/
 - [Day 9](Day9/) &nbsp; &nbsp; 🌟🌟
 - [Day 10](Day10/)      &nbsp; 🌟
 - [Day 11](Day11/)      &nbsp; 🌟🌟
+- [Day 12]()            &nbsp; 
+- [Day 13](Day13/)      &nbsp; 🌟🌟
