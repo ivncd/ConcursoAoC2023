@@ -17,3 +17,4 @@ Source: https://adventofcode.com/2023/
 - [Day 13](Day13/)      &nbsp; 🌟🌟
 - [Day 14](Day14/)      &nbsp; 🌟
 - [Day 15](Day15/)      &nbsp; 🌟🌟
+- [Day 16](Day16/)      &nbsp; 🌟🌟
