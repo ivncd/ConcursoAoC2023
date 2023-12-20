@@ -18,3 +18,6 @@ Source: https://adventofcode.com/2023/
 - [Day 14](Day14/)      &nbsp; 🌟
 - [Day 15](Day15/)      &nbsp; 🌟🌟
 - [Day 16](Day16/)      &nbsp; 🌟🌟
+- [Day 17](Day17/)      &nbsp; 
+- [Day 18](Day18/)      &nbsp; (Partial solution)
+- [Day 19](Day19/)      &nbsp; 🌟
