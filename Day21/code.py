@@ -11,7 +11,7 @@ for y in range(len(data)):
 
 
 WIDTH, HEIGHT = len(data[0]), len(data)
-def getPossibleSteps(positions: list[tuple[int, int]], maxSteps : int, part2 : bool = False):
+def getPossibleSteps(positions: list[tuple[int, int]], maxSteps : int, part2 : bool = False) -> int:
     possibleAdd, steps = [(0,1), (0,-1), (1,0), (-1, 0)], 1
     while steps <= maxSteps:
         newPositions = []
