@@ -23,3 +23,6 @@ Source: https://adventofcode.com/2023/
 - [Day 19](Day19/)      &nbsp; 🌟
 - [Day 20](Day20/)      &nbsp; 
 - [Day 21](Day21/)      &nbsp; 🌟
+- [Day 22](Day22/)      &nbsp; 
+- [Day 23](Day23/)      &nbsp; 🌟
+- [Day 24](Day24/)      &nbsp; 🌟
